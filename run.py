@@ -31,6 +31,7 @@ def new_game():
 
         correct_answers += check_answer(questions.get(key), answer)
         question_num += 1
+        print(f"Your score is {correct_answers}")
 
 def check_answer(player_answer, answer):
     """
@@ -43,5 +44,10 @@ def check_answer(player_answer, answer):
         print("\nIncorrect!")
         return 0
 
+def display_score(correct_answers):
+    """
+    Display score total to player
+    """
+    #print(f"Your score is {correct_answers}")
 
 new_game()
