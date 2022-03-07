@@ -50,4 +50,23 @@ def display_score(correct_answers):
     """
     #print(f"Your score is {correct_answers}")
 
+def play_again():
+    """
+    Ask player if they would like to play again
+    """
+    response = input("Would you like to play again? (y/n):\n")
+    response = response.lower()
+    while response != "y" and response != "n":
+        response = input("Please enter y or n only:\n").lower()
+
+    if response == "y":
+        return True
+    else:
+        return False
+
 new_game()
+
+while play_again():
+    new_game()
+
+print("Thank you for playing, come back again soon!")
