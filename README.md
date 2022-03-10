@@ -31,8 +31,7 @@ If the player selects 'n', the player is presented with a message saying "Thank 
 
 # Technology Used
 ## - Languages
-
-<img src="#" alt="Python" width="100px"/> 
+ 
 
 ## Programs
 - [GitHub](https://github.com/):
