@@ -1,31 +1,96 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# QuizMaster - A multiple-choice quiz game made in Python
 
-Welcome gregcotech007,
+[View the Live Project here - QuizMaster](https://p3-mc-quiz.herokuapp.com/)
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+The game "QuizMaster" is an online interactive game that provides a list of questions to the player and provides
+3 multiple-choice answers to choose from. The player is asked to input a, b, or c. Once they hit the return key,
+their answer is submitted and checked against the correct answer. If answer is correct, their score is incremented
+by 1 and the running total score is presented to the player with a message saying the answer is correct.
+If the user gets the question incorrect, their score does not change and the player is presented with their running
+score and a message that they got the question incorrect.
+Once the player has attempted all questions, they will then be presented with a final score. It is broken down into 
+3 results:
+    - less than or equal to 5 = "Better luck next time." with total score provided.
+    - less thank or equal to 15 = "Great answers" with total score provided.
+    - greater than 15 = "Congratulations Quizmaster!" with total score provided.
 
-## Reminders
+The player is then offered the option to play again by entering y/Y for Yes or n/N for No.
+If the player selects 'y', the quiz game starts again.
+If the player selects 'n', the player is presented with a message saying "Thank you for playing, come back soon!".
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+## Table of Contents
+* [User Stories](#user-story)
 
-## Creating the Heroku app
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+# User Experience (UX)
+## User Story
 
-1. `heroku/python`
-2. `heroku/nodejs`
+# Design
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+#  Features
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+# Technology Used
+## - Languages
 
-Connect your GitHub repository and deploy as normal.
+<img src="#" alt="Python" width="100px"/> 
 
-## Constraints
+## Programs
+- [GitHub](https://github.com/):
+    - GitHub was used to backup instances of GitPod Workspaces at intervals.
+- [GitPod](https://gitpod.io/):
+    - GitPod was used as the main Language Editor for programming the website.
+- [Heroku](https://www.heroku.com/):
+    - Heroku was used as the deployment platform for the CLI (command line interface) quiz game.
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+# Testing
 
------
-Happy coding!
+## Bug Testing
+
+
+## Code Validation
+- [PEP8 Online](http://pep8online.com/):
+    - This website was used validate the Python code for any errors.
+
+# Deployment
+
+## Heroku
+For deployment of the website to a live publicly accessible website, the following steps were required:
+- Confirmed that correct repository is selected as 'quiz'
+
+- Your site is published at https://p3-mc-quiz.herokuapp.com/
+
+# Cloning
+To clone a copy of the code in the repository, the following steps are required:
+- Go to https://github.com and select the Repository called 'quiz'
+- Click on the button called 'Code" and a pop-out window will show options to Clone through:
+    - HTTPS
+    - SSH
+    - GitHub CLI
+1. On GitHub.com, navigate to the main page of the repository.
+2. Above the list of files, click  Code.
+3. To clone the repository using HTTPS, under "Clone with HTTPS", click 'Clipboard to copy'. To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click Use SSH, then click 'Clipboard to copy'. To clone a repository using GitHub CLI, click Use GitHub CLI, then click 'Clipboard to copy'.
+4. Open Terminal.
+5. Change the current working directory to the location where you want the cloned directory.
+6. Type > git clone and then paste the URL you copied earlier. 
+    > $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+7. Press Enter to create your local clone.
+    > $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+    > Cloning into `Spoon-Knife`...
+    > remote: Counting objects: 10, done.
+    > remote: Compressing objects: 100% (8/8), done.
+    > remove: Total 10 (delta 1), reused 10 (delta 1)
+    > Unpacking objects: 100% (10/10), done.
+8. Repository Clone is now complete.
+
+# Credits
+
+## Tools
+
+
+## Tutorials & Resources
+- [GitHub: Clone a Repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+    - The link includes the full step-by-step instructions from GitHub Support on how to clone a repo.
+- [Code Institute](https://codeinstitute.net)
+    - The LMS tutorials were beneficial in giving me an insight into starting my first Python coding project.
+- Code Institute: Mentor: 
+    - Thanks to my Mentor who supported me throughout the project.
