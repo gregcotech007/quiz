@@ -1,4 +1,10 @@
-q_and_a = [
+"""
+Import random to randomise questions with answers to player
+"""
+import random
+
+
+__ques_dict__ = [
     {"question": "Who sang the title song for the latest Bond film, "
         "No Time to Die?: ",
      "answers": {"a": "Adele", "b": "Sam Smith", "c": "Billie Eilish"},
@@ -40,13 +46,12 @@ q_and_a = [
     {"question": "What spirit is used in making a Tom Collins?: ",
      "answers": {"a": "Vodka", "b": "Rum", "c": "Gin"},
      "correct_answer": "c"},
-    {"question": "The fear of insects is known as what?: ",
-     "answers": {"a": "Entomophobia", "b": "Arachnophobia", "c": "Ailurophobia"},
+    {"question": "Where was the earliest documented case of Spanish flu?: ",
+     "answers": {"a": "USA", "b": "Spain", "c": "Mexico"},
      "correct_answer": "a"},
-    {"question": "What was the name of the Franco-British supersonic "
-        "commercial plane that operated from 1976-2003?: ",
-     "answers": {"a": "Accord", "b": "Concorde", "c": "Mirage"},
-     "correct_answer": "b"},
+    {"question": "Where was tea invented?: ",
+     "answers": {"a": "England", "b": "USA", "c": "China"},
+     "correct_answer": "c"},
     {"question": "Which horoscope sign is a fish?: ",
      "answers": {"a": "Aquarius", "b": "Cancer", "c": "Pisces"},
      "correct_answer": "c"},
@@ -68,3 +73,11 @@ q_and_a = [
      "answers": {"a": "27", "b": "37", "c": "47"},
      "correct_answer": "b"},
 ]
+
+
+def get_questions_dict():
+    """
+    Create a shuffle of questions with answers before importing to quiz
+    """
+    random.shuffle(__ques_dict__)
+    return __ques_dict__
