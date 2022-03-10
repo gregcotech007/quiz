@@ -1,5 +1,6 @@
 q_and_a = [
-    {"question": "Who sang the title song for the latest Bond film, No Time to Die?: ",
+    {"question": "Who sang the title song for the latest Bond film, "
+        "No Time to Die?: ",
      "answers": {"a": "Adele", "b": "Sam Smith", "c": "Billie Eilish"},
      "correct_answer": "c"},
     {"question": "What Italian city is famous for its system of canals?: ",
@@ -17,16 +18,20 @@ q_and_a = [
     {"question": "Where was the first example of paper money used?: ",
      "answers": {"a": "China", "b": "Turkey", "c": "Greece"},
      "correct_answer": "a"},
-    {"question": "Who is generally considered the inventor of the motor car?: ",
+    {"question": "Who is generally considered the inventor of the "
+        "motor car?: ",
      "answers": {"a": "Henry Ford", "b": "Karl Benz", "c": "Henry M. Leland"},
      "correct_answer": "b"},
-    {"question": "If you were looking at Iguazu Falls, on what continent would you be?: ",
+    {"question": "If you were looking at Iguazu Falls, on what continent "
+        "would you be?: ",
      "answers": {"a": "Asia", "b": "Africa", "c": "South America"},
      "correct_answer": "c"},
-    {"question": "What number was the Apollo mission that successfully put a man on the moon for the first time in human history?: ",
+    {"question": "What number was the Apollo mission that successfully put a "
+        "man on the moon for the first time in human history?: ",
      "answers": {"a": "Apollo 11", "b": "Apollo 12", "c": "Apollo 13"},
      "correct_answer": "a"},
-    {"question": "Which of the following languages has the longest alphabet?: ",
+    {"question": "Which of the following languages has the longest "
+        "alphabet?: ",
      "answers": {"a": "Greek", "b": "Russian", "c": "Arabic"},
      "correct_answer": "b"},
     {"question": "Who was the lead singer of the band The Who?: ",
@@ -38,7 +43,8 @@ q_and_a = [
     {"question": "The fear of insects is known as what?: ",
      "answers": {"a": "Entomophobia", "b": "Arachnophobia", "c": "Ailurophobia"},
      "correct_answer": "a"},
-    {"question": "What was the name of the Franco-British supersonic commercial plane that operated from 1976-2003?: ",
+    {"question": "What was the name of the Franco-British supersonic "
+        "commercial plane that operated from 1976-2003?: ",
      "answers": {"a": "Accord", "b": "Concorde", "c": "Mirage"},
      "correct_answer": "b"},
     {"question": "Which horoscope sign is a fish?: ",
@@ -50,13 +56,15 @@ q_and_a = [
     {"question": "Which app has the most total users?: ",
      "answers": {"a": "TikTok", "b": "Snapchat", "c": "Instagram"},
      "correct_answer": "c"},
-    {"question": "Which Game of Thrones character is known as the Young Wolf: ",
+    {"question": "Which Game of Thrones character is known as the "
+        "Young Wolf: ",
      "answers": {"a": "Robb Stark", "b": "Arya Stark", "c": "Sansa Stark"},
      "correct_answer": "a"},
     {"question": "What city hosted the 2002 Olympic Games?: ",
      "answers": {"a": "Tokyo", "b": "Beijing", "c": "Sydney"},
      "correct_answer": "c"},
-    {"question": "How many plays do people (generally) believe that Shakespeare wrote?: ",
+    {"question": "How many plays do people (generally) believe that "
+        "Shakespeare wrote?: ",
      "answers": {"a": "27", "b": "37", "c": "47"},
      "correct_answer": "b"},
 ]
