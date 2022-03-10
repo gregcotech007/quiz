@@ -1,72 +1,50 @@
-questions = {
-    "Who sang the title song for the latest Bond film, No Time to Die?: ": "c",
-    "What Italian city is famous for its system of canals?: ": "c"
-}
+from questions import q_and_a
 
-answer_choice = [
-    ["a. Adele", "b. Sam Smith", "c. Billie Eilish"],
-    ["a. Rome", "b. Naples", "c. Venice"],
-    ]
 
-def new_game():
+def play_quiz(q_and_a):
     """
-    Call questions and mutiple choice answers to display to user
+    Iterates through quiz
     """
-
-    answers = []
-    correct_answers = 0
-    question_num = 1
-
-    for key in questions:
-        print("----------------------------------------------")
-        print(key)
-        for i in answer_choice[question_num-1]:
-            print(i)
+    score = 0
+    for q in q_and_a:
+        player_answer = ''
+        print("--------------------------------------------------")
         
-        answer = input("Enter a, b, or c:\n")
-        answer = answer.lower()
-        while answer != "a" and answer != "b" and answer != "c":
-            answer = input("Please enter a, b or c only:\n").lower()
-        answers.append(answer)
+        while player_answer not in ['a', 'b', 'c']:
+            print(f"{q['question']}")
 
-        correct_answers += check_answer(questions.get(key), answer)
-        question_num += 1
-        print(f"Your score is {correct_answers}")
+            for key, value in q['answers'].items():
+                print(f"\t{key}: {value}")
 
-def check_answer(player_answer, answer):
-    """
-    Check player's answer against correct answer
-    """
-    if player_answer == answer:
-        print("\nCorrect!")
-        return 1
-    else:
-        print("\nIncorrect!")
-        return 0
+            player_answer = input("Enter a, b, or c:\n")
+            player_answer = player_answer.lower()
 
-def display_score(correct_answers):
-    """
-    Display score total to player
-    """
-    #print(f"Your score is {correct_answers}")
+            while player_answer != "a" and player_answer != "b" and player_answer != "c":
+                player_answer = input("Please enter a, b or c only:\n").lower()
+
+        if player_answer == q['correct_answer']:
+            print("Correct\n")
+            score += 1
+            print(f"Your score is {score}")
+        else:
+            print(f"Incorrect\n")
+
 
 def play_again():
     """
     Ask player if they would like to play again
     """
-    response = input("Would you like to play again? (y/n):\n")
-    response = response.lower()
+    response = input("Would you like to play again? (y/n):\n").lower()
     while response != "y" and response != "n":
         response = input("Please enter y or n only:\n").lower()
-
     if response == "y":
         return True
     else:
         return False
 
-new_game()
+
+play_quiz(q_and_a)
 
 while play_again():
-    new_game()
-
-print("Thank you for playing, come back again soon!")
+    play_quiz(q_and_a)
+print("Thank you for playing, come back soon!")
