@@ -5,9 +5,8 @@ import random
 
 
 __ques_dict__ = [
-    {"question": "Who sang the title song for the latest Bond film, "
-        "No Time to Die?: ",
-     "answers": {"a": "Adele", "b": "Sam Smith", "c": "Billie Eilish"},
+    {"question": "In what country was Albert Einstein born?: ",
+     "answers": {"a": "Germany", "b": "Switzerland", "c": "USA"},
      "correct_answer": "c"},
     {"question": "What Italian city is famous for its system of canals?: ",
      "answers": {"a": "Rome", "b": "Naples", "c": "Venice"},
@@ -24,20 +23,16 @@ __ques_dict__ = [
     {"question": "Where was the first example of paper money used?: ",
      "answers": {"a": "China", "b": "Turkey", "c": "Greece"},
      "correct_answer": "a"},
-    {"question": "Who is generally considered the inventor of the "
-        "motor car?: ",
-     "answers": {"a": "Henry Ford", "b": "Karl Benz", "c": "Henry M. Leland"},
-     "correct_answer": "b"},
-    {"question": "If you were looking at Iguazu Falls, on what continent "
-        "would you be?: ",
-     "answers": {"a": "Asia", "b": "Africa", "c": "South America"},
+    {"question": "In what year did Windows 7 launch?: ",
+     "answers": {"a": "2007", "b": "2008", "c": "2009"},
      "correct_answer": "c"},
-    {"question": "What number was the Apollo mission that successfully put a "
-        "man on the moon for the first time in human history?: ",
-     "answers": {"a": "Apollo 11", "b": "Apollo 12", "c": "Apollo 13"},
+    {"question": "In what year did iPhone launch?: ",
+     "answers": {"a": "2006", "b": "2007", "c": "2008"},
+     "correct_answer": "b"},
+    {"question": "What is the strongest muscle in the human body?: ",
+     "answers": {"a": "Jaw", "b": "Heart", "c": "Glutes"},
      "correct_answer": "a"},
-    {"question": "Which of the following languages has the longest "
-        "alphabet?: ",
+    {"question": "Which language has the longest alphabet?: ",
      "answers": {"a": "Greek", "b": "Russian", "c": "Arabic"},
      "correct_answer": "b"},
     {"question": "Who was the lead singer of the band The Who?: ",
@@ -68,9 +63,8 @@ __ques_dict__ = [
     {"question": "What city hosted the 2002 Olympic Games?: ",
      "answers": {"a": "Tokyo", "b": "Beijing", "c": "Sydney"},
      "correct_answer": "c"},
-    {"question": "How many plays do people (generally) believe that "
-        "Shakespeare wrote?: ",
-     "answers": {"a": "27", "b": "37", "c": "47"},
+    {"question": "Which Irish pub is listed as older in Ireland?: ",
+     "answers": {"a": "Sean's Bar", "b": "Johnny Fox's", "c": "Morahan’s"},
      "correct_answer": "b"},
 ]
 
