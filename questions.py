@@ -63,8 +63,8 @@ __ques_dict__ = [
     {"question": "What city hosted the 2002 Olympic Games?: ",
      "answers": {"a": "Tokyo", "b": "Beijing", "c": "Sydney"},
      "correct_answer": "c"},
-    {"question": "Which Irish pub is listed as older in Ireland?: ",
-     "answers": {"a": "Sean's Bar", "b": "Johnny Fox's", "c": "Morahan’s"},
+    {"question": "Which Irish pub is listed as oldest in Ireland?: ",
+     "answers": {"a": "Sean's Bar", "b": "Johnny Fox's", "c": "Morahans"},
      "correct_answer": "b"},
 ]
 

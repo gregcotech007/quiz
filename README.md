@@ -24,14 +24,26 @@ If the player selects 'n', the player is presented with a message saying "Thank 
 
 # User Experience (UX)
 ## User Story
-
-# Design
+Target Audience – A general audience of adults of all ages who would like to test their general knowledge of a multiple-choice quiz game.
+- Play the game across different devices and browsers.
+- Understand how to play the game.
+- Play a game without a timer function.
+- Know if the answer was correct or incorrect.
+- Know the running total of my score.
+- Know what happens if invalid or blank information is submitted.
+- Have the option to play again or to finish the quiz game completely.
+- Know the final score and how many questions were correct out of the total number of questions.
+- To have fun.
 
 #  Features
+## Title Section
+A welcome message is presented to the player when the game is started.
+
 
 # Technology Used
-## - Languages
- 
+## Languages
+### Python
+[Python](https://www.python.org/doc/essays/blurb/) is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together.
 
 ## Programs
 - [GitHub](https://github.com/):
@@ -51,7 +63,31 @@ If the player selects 'n', the player is presented with a message saying "Thank 
     - This website was used validate the Python code for any errors.
 
 # Deployment
+Before deploying to Heroku, a requirements.txt was created by typing and submitting the following code:
+pip3 freeze
 
+Log in to Heroku with login credentials or create a new account if required.
+When logged in, click the button labelled "New" from the dashboard in the top right corner.
+From the "New" drop-down menu, select "Create New App".
+A unique app name must be chosen. I chose "p3-mc-quiz".
+Select a region, "United States" or "Europe". I chose "Europe" for my region.
+Click on the "Create App" button.
+
+On the next page, select the "Settings" Tab.
+There is an option to create Config Vars", but in my case, there were not required.
+On the Build Packs section, choose to add the following in the set order:
+    - heroku/python
+    - heroku/nodejs
+Click on python and save changes, then nodejs and save changes.
+
+Scroll to the top of the page and now choose the Deploy tab.
+Select Github as the deployment method.
+Confirm you want to connect to GitHub and sign-in with GitHub credentials, if required.
+Search for the repository name and click the connect button.
+Scroll to the bottom of the deploy page and select preferred deployment type:
+Choose either "Enable Automatic" Deploys for automatic deployment when you push updates to Github or you can choose "Manual" which allows you to manually deployment when required.
+
+Select the correct branch for deployment from the drop-down menu and click Deploy Branch for manual deployment.
 ## Heroku
 For deployment of the website to a live publicly accessible website, the following steps were required:
 - Confirmed that correct repository is selected as 'quiz'
