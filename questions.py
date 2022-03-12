@@ -7,7 +7,7 @@ import random
 __ques_dict__ = [
     {"question": "In what country was Albert Einstein born?: ",
      "answers": {"a": "Germany", "b": "Switzerland", "c": "USA"},
-     "correct_answer": "c"},
+     "correct_answer": "a"},
     {"question": "What Italian city is famous for its system of canals?: ",
      "answers": {"a": "Rome", "b": "Naples", "c": "Venice"},
      "correct_answer": "c"},
@@ -56,16 +56,15 @@ __ques_dict__ = [
     {"question": "Which app has the most total users?: ",
      "answers": {"a": "TikTok", "b": "Snapchat", "c": "Instagram"},
      "correct_answer": "c"},
-    {"question": "Which Game of Thrones character is known as the "
-        "Young Wolf: ",
-     "answers": {"a": "Robb Stark", "b": "Arya Stark", "c": "Sansa Stark"},
-     "correct_answer": "a"},
     {"question": "What city hosted the 2002 Olympic Games?: ",
      "answers": {"a": "Tokyo", "b": "Beijing", "c": "Sydney"},
      "correct_answer": "c"},
+    {"question": "Which Irish City is 'Pery Square' located?: ",
+     "answers": {"a": "Dublin", "b": "Cork", "c": "Limerick"},
+     "correct_answer": "c"},
     {"question": "Which Irish pub is listed as oldest in Ireland?: ",
      "answers": {"a": "Sean's Bar", "b": "Johnny Fox's", "c": "Morahans"},
-     "correct_answer": "b"},
+     "correct_answer": "a"},
 ]
 
 
