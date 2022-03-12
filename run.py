@@ -57,7 +57,7 @@ def total_score(score, num_questions):
         print("--------------------------------------------------")
     elif score <= 15:
         print("---------------------------------------------------")
-        print("Great answers. ")
+        print("Well done! Great answers. ")
         print(f"you have scored {score} out of {num_questions}.")
         print("---------------------------------------------------")
     elif score > 15:
