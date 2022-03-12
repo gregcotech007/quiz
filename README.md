@@ -1,25 +1,41 @@
-# QuizMaster - A multiple-choice quiz game made in Python
+# QuizMaster => A multiple-choice quiz game made in Python
 
 [View the Live Project here - QuizMaster](https://p3-mc-quiz.herokuapp.com/)
 
+## Table of Contents
+* [How to Play!](#how-to-play)
+* [User Stories](#user-story)
+* [Features](#features)
+
+
+## About QuizMaster
 The game "QuizMaster" is an online interactive game that provides a list of questions to the player and provides
-3 multiple-choice answers to choose from. The player is asked to input a, b, or c. Once they hit the return key,
-their answer is submitted and checked against the correct answer. If answer is correct, their score is incremented
-by 1 and the running total score is presented to the player with a message saying the answer is correct.
+3 multiple-choice answers to choose from. 
+
+
+## How to Play!
+
+After the website link loads, the user is presented with the welcome message and is then asked the first randomised question.
+
+The player is asked to input a, b, or c. Once they hit the return key, their answer is submitted and checked against the correct answer. If the player submits as blank, or a character or number that does not match, they will be asked to enter their response again. The play will be asked continually until they enter a valid input as a, b or c only.
+
+If answer is correct, their score is incremented by 1 and the running total score is presented to the player with a message saying the answer is correct.
+
 If the user gets the question incorrect, their score does not change and the player is presented with their running
 score and a message that they got the question incorrect.
+
 Once the player has attempted all questions, they will then be presented with a final score. It is broken down into 
 3 results:
+
     - less than or equal to 5 = "Better luck next time." with total score provided.
     - less thank or equal to 15 = "Great answers" with total score provided.
     - greater than 15 = "Congratulations Quizmaster!" with total score provided.
 
 The player is then offered the option to play again by entering y/Y for Yes or n/N for No.
-If the player selects 'y', the quiz game starts again.
-If the player selects 'n', the player is presented with a message saying "Thank you for playing, come back soon!".
 
-## Table of Contents
-* [User Stories](#user-story)
+If the player selects 'y', the quiz game starts again.
+
+If the player selects 'n', the player is presented with a message saying "Thank you for playing, come back soon!".
 
 
 # User Experience (UX)
@@ -39,9 +55,40 @@ Target Audience – A general audience of adults of all ages who would like to t
 ## Title Section
 A welcome message is presented to the player when the game is started.
 
+![Title](assets/images/welcome_start-quiz.png)
+
+## Answers & Scoring
+The player is presented with a multiple choice question at random and they are asked to choose a, b or c as their answer to submit. When the player enters a, b or c and hits enter, their answer is then validated. The player's score is incremented by 1 if correct and presented with a message to say they got it correct.
+
+![Answer Correct](assets/images/score_correct_increment.png)
+
+If the answer is incorrect, then the score does not change and they are presented a message saying the answer is incorrect and it shows their score does not change.
+
+![Incorrect Correct](assets/images/score_incorrect_nochange.png)
+
+The player continues to answer all questions until the final question has been answered.
+
+When all answers have been attempted, the player is then presented with their total score.
+
+- For a score 0 to 5, the player is presented with the following message:
+
+![Score <= 5](assets/images/betterluck_playagain.png)
+
+- For a score 6 to 15, the player is presented with the following message:
+
+![Score <= 15](assets/images/welldone_playagain.png)
+
+- For a score greater than 15, the player is presented with the following message:
+
+![Score > 15](assets/images/congratsquizmaster_playagain.png)
+
+- If the user experiences any issues with the game response, they can simply click on the "Run Program" button to restart the game.
+
+![Run Program](assets/images/run-program.png)
+
 
 # Technology Used
-## Languages
+## Language
 ### Python
 [Python](https://www.python.org/doc/essays/blurb/) is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together.
 
@@ -54,13 +101,26 @@ A welcome message is presented to the player when the game is started.
     - Heroku was used as the deployment platform for the CLI (command line interface) quiz game.
 
 # Testing
+## Devices & Browsers
+The QuizMaster game was tested on MacBook Pro running the latest MacOS Monterey (12.2.1) and Google Chrome (Version 99.0.4844.51 (Official Build) (arm64)). The quiz game performed well without issues and took input from the keyboard.
+
+I also tested the QuizMaster game on the same device MacBook Pro running the latest MacOS Monterey (12.2.1) and Safari (Version 15.3). The quiz game loaded up correctly and displayed the welcome message and first question for player input, but it did not take any keyboard input response and therefore I was unable to play it.
+
 
 ## Bug Testing
+I found a bug when testing the play again option that they player was able to submit anything, for example, a number, as per the screenshot example and it responded as if the user selected n for no.
+
+![Play Again Validation](assets/images/playagain_validate_bug.png)
 
 
 ## Code Validation
 - [PEP8 Online](http://pep8online.com/):
     - This website was used validate the Python code for any errors.
+
+    ![PEP8 Online - run.py](assets/images/pep8online_run_passed.png)
+
+    ![PEP8 Online - questions.py](assets/images/pep8online_questions_passed.png)
+
 
 # Deployment
 Before deploying to Heroku, a requirements.txt was created by typing and submitting the following code:
