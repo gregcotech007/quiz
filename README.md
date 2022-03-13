@@ -24,11 +24,11 @@ If answer is correct, their score is incremented by 1 and the running total scor
 If the user gets the question incorrect, their score does not change and the player is presented with their running
 score and a message that they got the question incorrect.
 
-Once the player has attempted all questions, they will then be presented with a final score. It is broken down into 
+Once the player has attempted all questions, they will then be presented with their final score. It is broken down into 
 3 results:
 
     - less than or equal to 5 = "Better luck next time." with total score provided.
-    - less thank or equal to 15 = "Great answers" with total score provided.
+    - less thank or equal to 15 = "Well done, great answers" with total score provided.
     - greater than 15 = "Congratulations Quizmaster!" with total score provided.
 
 The player is then offered the option to play again by entering y/Y for Yes or n/N for No.
@@ -102,10 +102,18 @@ When all answers have been attempted, the player is then presented with their to
 
 # Testing
 ## Devices & Browsers
-The QuizMaster game was tested on MacBook Pro running the latest MacOS Monterey (12.2.1) and Google Chrome (Version 99.0.4844.51 (Official Build) (arm64)). The quiz game performed well without issues and took input from the keyboard.
+- MacBook Pro
+The QuizMaster game was tested on MacBook Pro running the latest MacOS Monterey (12.2.1) and Google Chrome (Version 99.0.4844.51 (Official Build) (arm64)). 
+The quiz game performed well without issues and took input from the keyboard.
 
 I also tested the QuizMaster game on the same device MacBook Pro running the latest MacOS Monterey (12.2.1) and Safari (Version 15.3). The quiz game loaded up correctly and displayed the welcome message and first question for player input, but it did not take any keyboard input response and therefore I was unable to play it.
 
+- Windows 10
+The QuizMaster game was tested on Windows 10 running Google Chrome (Version 98.0.4768.102 (Official Build)(64-Bit)).
+The quiz game performed well without issues and took input from the keyboard.
+
+I also tested it on the same Windows 10 computer running Microsoft Edge (Version 98.0.1108.56 (Official build)(64-Bit)) and also Mozilla Firefox (Version 97.0.1 (64-Bit)).
+Both browsers worked seamlessly without any issues.
 
 ## Bug Testing
 I found a bug when testing the play again option that they player was able to submit anything, for example, a number, as per the screenshot example and it responded as if the user selected n for no.
