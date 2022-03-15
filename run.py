@@ -63,7 +63,7 @@ def total_score(score, num_questions):
     elif score > 15:
         print("---------------------------------------------------")
         print("Congratulations Quizmaster!")
-        print(f"you have scored {score} out of {num_questions}.")
+        print(f"You have scored {score} out of {num_questions}.")
         print("---------------------------------------------------")
 
 
